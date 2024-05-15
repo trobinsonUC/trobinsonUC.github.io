@@ -1,3 +1,3 @@
 function showCourses(){
-  document.getElementById('course-content').style.display("block")
+  document.getElementById('course-content').style.display = "block";
 }
