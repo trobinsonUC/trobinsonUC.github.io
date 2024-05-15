@@ -2,7 +2,10 @@ let navLinks = document.querySelector(".nav-link");
 let courseFinder = document.querySelector(".course-finder");
 
 navLinks.addEventListener("click", function(){
-  document.getElementById("main").children.style.display = "none";
+  let contentSections = document.getElementById("main").children;
+  contentSections.forEach(element => {
+    element.style.display = "none";
+  });
 });
 
 courseFinder.addEventListener("click", function(){
